@@ -1,0 +1,18 @@
+user_input = int(input("Enter a number: "))
+def isPrime(num):
+    if num<3:
+        return "Not a prime number"
+    if num == 2:
+        return "It is a prime number"
+    
+    for i in range(3,num//2+1):
+        if num %i == 0:
+            return "Not a prime number"
+        else:
+            return "It is a prime number"
+
+try:
+    result = isPrime(user_input)
+    print(result)
+except Exception as e:
+    print(e)
