@@ -1,6 +1,6 @@
 user_input = int(input("Enter a number: "))
 def isPrime(num):
-    if num<3:
+    if num<2:
         return "Not a prime number"
     if num == 2:
         return "It is a prime number"
